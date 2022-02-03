@@ -1,0 +1,55 @@
+# One SHot Hi-Lo
+import random
+print("I'm thinking of a number between 1-100. Try to guess it.")
+real = (random.randrange(1,101))
+guess = int(random.randrange(1,101))
+print(f'I guess it is {guess}')
+if guess > 50:
+    print("Sorry, you are too high. I am thinking about 23.")
+elif guess == 23:
+    print("That's the right answer.")
+elif guess < 23:
+    print("That's not the right number.")
+else:
+    print("That's not what I want.")
+print(f'The number I am thinking about is {real}')
+
+#gender game
+first_name = input("First name: ")
+last_name = input("Last name: ")
+age = input("Age: ")
+gender = input("What's your gender? (M or F): ")
+if gender == "M": 
+    print("M")
+if gender == "F":
+    print("F")
+print(f"Are you married, {first_name}, (y or n)")
+marriage = input()
+if marriage == "y":
+    print(f"Then I should call you Miss. {last_name}")
+else:
+    print(f"Then I should call you Mrs. {last_name}")
+
+#how old------------------------------------------
+# import and initialize the pygame libraby
+import pygame
+
+# Set up drawing window
+screen = pygame.display.set_mode([700,500])
+# run until the user asks to quit
+done = True
+while done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = False
+# Fill the background with white(can be other colour)
+screen.fill((255,255,255))
+# Draw blue circle
+pygame.draw.circle(screen, (0,0,255), (250,250),75)
+
+
+# Flip the display
+pygame.display.flip()
+# Done
+pygame.quit()
+
