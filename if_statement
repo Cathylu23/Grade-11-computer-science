@@ -1,0 +1,110 @@
+# Check multipe variavle:
+language = "Python"
+if language == "Python":
+    print("Language is Python")
+elif language == "Java":
+    print("Language is Java.")
+else:
+    print('No match')
+    language = "java"
+
+# and
+# or
+# not
+user = 'Cathy'
+log_in = True
+if user == 'Cathy' and log_in:
+    print("Cathy's page")
+else:
+    print("Bad Creds")
+
+if user == 'Cathy' or log_in:
+    print('Cathy')
+else:
+    print('Bad Creds')
+
+# if, elif and else
+user = 'Cathy'
+log_in = False
+if not log_in:
+    print('Please log in: ')
+else:
+    print('Welcome!')
+
+# Age message:
+name = input("Please enter your name: ")
+age = int(input("Please enter your age: "))
+if age <= 16:
+    print('You cannot drive.')
+elif age >= 16 and age <= 17:
+    print('You cannot drive but no vote.')
+elif age >= 18 and age <= 24:
+    print("You can vote but not rent a car.")
+if age >= 25:
+    print('You can do pretty much anything.')
+
+
+# random number
+# The first thing: import random
+import random
+print("if these next two random numbers are the same?")
+a = (random.randrange(1,100))  #(1,100)for range of random number
+print(f'The first random number is {a}')
+b = (random.randrange(1,100))
+print(f"The second number is {b}")
+if a == b:
+    print("WOW, the two numbers are the same!")
+else:
+    print("The two random numbers are different, not surprising.")
+
+# fortune.cookie:
+import random
+print("if these next two random numbers are the same?")
+a = (random.randrange(1,100))  #(1,100)for range of random number
+print(f'The first random number is {a}')
+b = (random.randrange(1,100))
+print(f"The second number is {b}")
+if a == b:
+    print("WOW, the two numbers are the same!")
+else:
+    print("The two random numbers are different, not surprising.")
+
+# Dice 3.5
+import random
+print('HERE COME THE DICE!')
+a = int(random.randrange(1,7))
+print(f'Roll #1: {a}')
+b = int(random.randrange(1,7))
+print(f'Roll #1: {b}')
+total = float(a+b)
+print(total)
+
+
+3.4 taking attendence 
+print("What's your name?")
+name = input("Name: ")
+if name == 'Cathy':
+    print('Please wait for a second.')
+if not name == 'Cathy':
+    print("That's not sounds good.")
+
+import random
+chance = random.randrange(0,100)
+if chance <= 1:
+    print("RNG wins")
+else:
+    print('no')
+    
+# bmi_categories.py--------------------------
+height = int(input('Your height in m: '))
+weight = int(input('Your weight in kg: '))
+bmi = int(height) / int(weight)
+print(f'Your BMI is {bmi}')
+if bmi <= 18.5:
+    print('BMI Category: underweight')
+elif bmi >= 18.5 and bmi <= 24:
+    print('BMI Category: normal weight')
+elif bmi >= 25 and bmi <= 29.9:
+    print('BMI Category: overweght')
+else:
+    print('BMI Category: obese')
